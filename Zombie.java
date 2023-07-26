@@ -11,7 +11,7 @@ public class Zombie extends Actor
     int animateImage = 0; 
     int animateSpeed = 5; 
     int count; 
-    int health = 3; 
+    int health = 4; 
     Player player; 
     Counter counter; 
     public Zombie(Player mainPlayer, Counter counter)
@@ -20,6 +20,7 @@ public class Zombie extends Actor
         player = mainPlayer;
         setImage("skeleton-idle_16.png");
         getImage().scale(80, 80);
+        
     }
     public void act()
     {

@@ -19,12 +19,15 @@ public class MyWorld extends World
     public MyWorld()
     {    
         super(1000, 800, 1); 
+        GreenfootImage backgroundImage = new GreenfootImage("FondoM.png");
+        setBackground(backgroundImage);
         mainPlayer = new Player(weaponButton, superPower);
         addObject(mainPlayer, getWidth()/2, getHeight()/2);
         addObject(counter, 130, 100); 
         addObject(healthbar, mainPlayer.getX() - 5, mainPlayer.getY() - 50);
         addObject(weaponButton, 900, 100);
         addObject(superPower, mainPlayer.getX() +10, mainPlayer.getY() - 80);
+        Greenfoot.playSound("MusicaF.wav");
     }
     public Player getPlayer()
     {
@@ -45,7 +48,7 @@ public class MyWorld extends World
     public void spawnZombies()
     {
        if (count % spawnSpeed == 0){
-        randomSpawn = Greenfoot.getRandomNumber(8);
+        randomSpawn = Greenfoot.getRandomNumber(9);
         switch(randomSpawn){
             case 0 : addObject(new Zombie(mainPlayer, counter), 0, 0); break;
             case 1: addObject(new Zombie(mainPlayer, counter), getWidth()/2, 0); break;

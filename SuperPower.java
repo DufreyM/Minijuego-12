@@ -32,7 +32,7 @@ public class SuperPower extends Actor
     public void useSuper()
     {
         count++; 
-        if(count % 5 == 0)
+        if(count % 10 == 0)
         {
             superCount ++; 
         }

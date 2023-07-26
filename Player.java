@@ -16,21 +16,15 @@ public class Player extends Actor
     int superTimer; 
     public Player()
     {
-        setImage(new GreenfootImage(70,50));
-        getImage().setColor(Color.YELLOW);
-        getImage().fillOval(0, 0, 50, 50);
-        getImage().setColor(Color.BLACK); 
-        getImage().fillRect(50, 25, 70, 10);
+        setImage("Tanque.png");
+        getImage().scale(80, 80);
     }
     public Player(WeaponButton weaponButton, SuperPower superPower)
     {
         this.superPower = superPower;
         this.weaponButton = weaponButton; 
-        setImage(new GreenfootImage(70,50));
-        getImage().setColor(Color.YELLOW);
-        getImage().fillOval(0, 0, 50, 50);
-        getImage().setColor(Color.BLACK); 
-        getImage().fillRect(50, 25, 70, 10);
+        setImage("Tanque.png");
+        getImage().scale(80, 80);
     }
     public void act()
     {
@@ -48,6 +42,7 @@ public class Player extends Actor
     }
     public void moveAround()
     {
+
         if(Greenfoot.isKeyDown("w"))
         setLocation(getX(),getY() - speed);
         if(Greenfoot.isKeyDown("a"))
@@ -78,7 +73,7 @@ public class Player extends Actor
             Projectile projectile = new Projectile();
             getWorld().addObject(projectile, getX(), getY());
             projectile.setRotation(getRotation()-10);
-            projectile.move(25);
+            projectile.move(35);
             Projectile projectile2 = new Projectile();
             getWorld().addObject(projectile2, getX(), getY());
             projectile2.setRotation(getRotation()+10);
@@ -123,6 +118,7 @@ public class Player extends Actor
         {
             superPower.superCount = 0; 
             superTimer = 0;
+            
         }
     }
     
