@@ -1,4 +1,5 @@
 #Greenfoot project file
+class.HealthBar.image=Bot\u00F3nArma.png
 class.MyWorld.image=FondoM.png
 class.Player.image=Tanque.png
 class.Zombie.image=spr_player_walk_RUN_4.png

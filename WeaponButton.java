@@ -14,7 +14,8 @@ public class WeaponButton extends Actor
     public WeaponButton(Counter counter)
     {
         this.counter = counter; 
-        setImage(new GreenfootImage("Weapon \n Upgrade", 25, Color.BLACK, new Color(0,0,0,0)));
+        setImage("BotónArma.png");
+        getImage().scale(100, 100);
     }
     
     public void act()
