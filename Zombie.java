@@ -59,7 +59,8 @@ public class Zombie extends Actor
         counter.score++;
         counter.money+=5; 
         getWorld().removeObject(this);
-        
+            if(count % 15 == 0)
+            Greenfoot.playSound("Zombie2.mp3");
         }
     }
 }

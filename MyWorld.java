@@ -27,7 +27,7 @@ public class MyWorld extends World
         addObject(healthbar, mainPlayer.getX() - 5, mainPlayer.getY() - 50);
         addObject(weaponButton, 900, 100);
         addObject(superPower, mainPlayer.getX() +10, mainPlayer.getY() - 80);
-        Greenfoot.playSound("MusicaFondo.wav");
+        Greenfoot.playSound("Pista.wav");
     }
     public Player getPlayer()
     {

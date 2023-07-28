@@ -24,6 +24,7 @@ public class WeaponButton extends Actor
         {
             counter.money -= 150; 
             weaponUpgrade++;
+            Greenfoot.playSound("moneda.mp3");
         }
         if(weaponUpgrade>3)
             weaponUpgrade=3;

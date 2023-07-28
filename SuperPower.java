@@ -3,8 +3,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class SuperPower here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Leonardo Dufrey Mejía Mejía
+ * @version 1.0
  */
 public class SuperPower extends Actor
 {
