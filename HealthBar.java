@@ -37,7 +37,7 @@ public class HealthBar extends Actor
         }
         if (health<=0)
         {
-            getWorld().showText("You Lose", getWorld().getWidth()/2, getWorld().getHeight()/2 );
+            getWorld().showText("Has perdido", getWorld().getWidth()/2, getWorld().getHeight()/2 );
             Greenfoot.stop(); 
         }
     }

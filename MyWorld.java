@@ -18,14 +18,14 @@ public class MyWorld extends World
     SuperPower superPower = new SuperPower(); 
     public MyWorld()
     {    
-        super(1000, 800, 1); 
+        super(800, 600, 1); 
         GreenfootImage backgroundImage = new GreenfootImage("FondoM.png");
         setBackground(backgroundImage);
         mainPlayer = new Player(weaponButton, superPower);
         addObject(mainPlayer, getWidth()/2, getHeight()/2);
         addObject(counter, 130, 100); 
         addObject(healthbar, mainPlayer.getX() - 5, mainPlayer.getY() - 50);
-        addObject(weaponButton, 900, 100);
+        addObject(weaponButton, 700, 100);
         addObject(superPower, mainPlayer.getX() +10, mainPlayer.getY() - 80);
         Greenfoot.playSound("Pista.wav");
     }
